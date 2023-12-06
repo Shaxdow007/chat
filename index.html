@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHXD App || SHADOW007</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css tailwind -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container mx-auto p-6 relative">
+        <div class="flex justify-between items-center">
+          <div class="logo">
+            <a class="font-bold text-2xl" href="#"
+              ><h1>SHXD<span class="text-primaryColor text-4xl">.</span></h1></a
+            >
+          </div>
+          <ul class="hidden md:flex gap-4 capitalize">
+            <li>
+              <a
+                class="text-primaryColor px-4 hover:text-secondaryColor hover:ease-in hover:duration-300"
+                href="#home"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-primaryColor px-4 hover:text-secondaryColor hover:ease-in hover:duration-300"
+                href="#aboutUs"
+                >about us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-primaryColor px-4 hover:text-secondaryColor hover:ease-in hover:duration-300"
+                href="#testimonials"
+                >testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-primaryColor px-4 hover:text-secondaryColor hover:ease-in hover:duration-300"
+                href="#blog"
+                >blog</a
+              >
+            </li>
+          </ul>
+          <div class="hidden md:block">
+            <a
+              class="capitalize text-whiteColor bg-primaryColor py-2 px-4 rounded-full hover:bg-secondaryColor hover:ease-in hover:duration-300"
+              href="#"
+              >download app</a
+            >
+          </div>
+          <!-- hamburger icon  -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="ham-top"></span>
+            <span class="ham-middle"></span>
+            <span class="ham-bottom"></span>
+          </button>
+        </div>
+        <!-- mobile menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <ul class="md:flex gap-4 capitalize space-y-6">
+              <li>
+                <a
+                  class="text-primaryColor hover:text-secondaryColor hover:ease-in hover:duration-300"
+                  href="#home"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-primaryColor hover:text-secondaryColor hover:ease-in hover:duration-300"
+                  href="#aboutUs"
+                  >about us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-primaryColor hover:text-secondaryColor hover:ease-in hover:duration-300"
+                  href="#testimonials"
+                  >testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-primaryColor hover:text-secondaryColor hover:ease-in hover:duration-300"
+                  href="#blog"
+                  >blog</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- home section  -->
+    <section id="home" class="my-12">
+      <div class="container mx-auto p-6">
+        <div
+          class="hero flex flex-col w-full gap-12 md:flex-row md:justify-between md:items-center"
+        >
+          <!-- hero left -->
+          <div class="hero-left capitalize">
+            <p class="text-center md:text-start mb-6 font-light text-lg">
+              available on iOS and android
+            </p>
+            <h1
+              class="font-bold text-center md:text-start text-4xl md:text-7xl mb-6"
+            >
+              an inclusive community <br />
+              for all the photographers <br />
+              and creative people
+            </h1>
+            <p class="text-center md:text-start mb-6">
+              nulla Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore, modi. Architecto natus animi praesentium veritatis
+              asperiores dolores magnam fugit debitis ipsam, sint error
+              aspernatur? Aliquid sequi deleniti perferendis modi expedita.
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <a
+                class="capitalize text-whiteColor bg-primaryColor py-2 px-4 rounded-full hover:bg-secondaryColor hover:ease-in hover:duration-300"
+                href="#"
+                >download for free</a
+              >
+            </div>
+          </div>
+          <!-- hero right -->
+          <div class="hero-right hidden md:block">
+            <img class="rounded-lg" src="images/app3.jpg" alt="app" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sharing platform -->
+    <section class="sharing">
+      <div class="container mx-auto p-6">
+        <div
+          class="header capitalize flex flex-col md:flex-row md:justify-between gap-6"
+        >
+          <!-- left sharing -->
+          <div class="md:w-8/12">
+            <h2 class="font-bold text-2xl md:text-4xl">
+              a community and photo sharing <br />
+              platform for creators.
+            </h2>
+          </div>
+          <!-- right sharing  -->
+          <div class="md:w-4/12">
+            <span class="text-darkGray font-light"
+              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est
+              suscipit nostrum placeat dolor dicta iure quasi natus expedita nam
+              ducimus id eius, sequi distinctio provident in, consequatur ad
+              totam quos!</span
+            >
+          </div>
+        </div>
+        <!-- img sharing -->
+        <div class="mt-6 md:mt-20 flex justify-center">
+          <img class="rounded-lg" src="images/appFull1.jpg" alt="app" />
+        </div>
+      </div>
+    </section>
+    <!-- why vault? -->
+    <section class="vault my-12">
+      <div class="container mx-auto p-6 bg-blue-100 rounded-lg">
+        <div class="header-vault text-center capitalize mb-20">
+          <h3 class="text-3xl font-bold mb-3">
+            why vault<span class="text-primaryColor">?</span>
+          </h3>
+          <p class="font-light text-darkGray">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos in
+            eveniet eligendi nobis.
+          </p>
+        </div>
+        <!-- grid vault -->
+        <div
+          class="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-6 capitalize text-center"
+        >
+          <!-- box1  -->
+          <div class="p-4 bg-indigo-200">
+            <i
+              class="fa-solid fa-image text-whiteColor bg-primaryColor p-4 rounded-full"
+            ></i>
+            <h4 class="text-xl font-bold my-3">high resotution picture</h4>
+            <p class="text-darkGray font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              praesentium voluptas id accusantium neque. Ea neque sed culpa nisi
+              fugiat.
+            </p>
+          </div>
+          <!-- box2  -->
+          <div class="p-4 bg-indigo-200">
+            <i
+              class="fa-solid fa-user text-whiteColor bg-primaryColor p-4 rounded-full"
+            ></i>
+            <h4 class="text-xl font-bold my-3">public profiles</h4>
+            <p class="text-darkGray font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              praesentium voluptas id accusantium neque. Ea neque sed culpa nisi
+              fugiat.
+            </p>
+          </div>
+          <!-- box3  -->
+          <div class="p-4 bg-indigo-200">
+            <i
+              class="fa-solid fa-wifi text-whiteColor bg-primaryColor p-4 rounded-full"
+            ></i>
+            <h4 class="text-xl font-bold my-3">chronological feed</h4>
+            <p class="text-darkGray font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              praesentium voluptas id accusantium neque. Ea neque sed culpa nisi
+              fugiat.
+            </p>
+          </div>
+          <!-- box4  -->
+          <div class="p-4 bg-indigo-200">
+            <i
+              class="fa-solid fa-share-nodes text-whiteColor bg-primaryColor p-4 rounded-full"
+            ></i>
+            <h4 class="text-xl font-bold my-3">share with one click</h4>
+            <p class="text-darkGray font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              praesentium voluptas id accusantium neque. Ea neque sed culpa nisi
+              fugiat.
+            </p>
+          </div>
+          <!-- box5  -->
+          <div class="p-4 bg-indigo-200">
+            <i
+              class="fa-solid fa-eye-slash text-whiteColor bg-primaryColor p-4 rounded-full"
+            ></i>
+            <h4 class="text-xl font-bold my-3">EXIF data</h4>
+            <p class="text-darkGray font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              praesentium voluptas id accusantium neque. Ea neque sed culpa nisi
+              fugiat.
+            </p>
+          </div>
+          <!-- box6  -->
+          <div class="p-4 bg-indigo-200">
+            <i
+              class="fa-solid fa-gift text-whiteColor bg-primaryColor p-4 rounded-full"
+            ></i>
+            <h4 class="text-xl font-bold my-3">subscription system</h4>
+            <p class="text-darkGray font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              praesentium voluptas id accusantium neque. Ea neque sed culpa nisi
+              fugiat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- discover -->
+    <section class="discover my-12">
+      <div class="container mx-auto p-6">
+        <div
+          class="discover-content md:flex md:items-center md:justify-between gap-6 w-full"
+        >
+          <!-- left discover -->
+          <div class="w-full mb-6 md:w-1/2 lg:w-1/3">
+            <img class="rounded-lg" src="images/app5.jpg" alt="chat app" />
+          </div>
+          <!-- rigth discover -->
+          <div class="capitalize w-full md:w-1/2">
+            <h4 class="mb-6 text-4xl font-bold lg:text-6xl">
+              discover masterpiece from talented creators
+            </h4>
+            <p class="mb-6 text-darkGray">
+              euismod commodo Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nemo fuga tempora aliquam consequatur! Consequuntur eius
+              enim, doloribus ullam rem quasi cumque tempora placeat alias
+              accusantium animi! Consequatur tenetur delectus cumque!
+            </p>
+            <div class="text-center md:text-start">
+              <a
+                class="text-whiteColor bg-primaryColor py-2 px-10 rounded-full hover:bg-secondaryColor hover:ease-in hover:duration-300"
+                href="#"
+                >start discovery</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- curated artworks -->
+    <section class="artworks my-12">
+      <div class="container mx-auto p-6">
+        <div
+          class="artwork-content md:flex md:flex-row-reverse md:items-center md:justify-between gap-6 w-full"
+        >
+          <!-- left artwork -->
+          <div class="w-full mb-6 md:w-1/2 lg:w-1/3">
+            <img class="rounded-lg" src="images/app6.jpg" alt="chat app" />
+          </div>
+          <!-- rigth artwork -->
+          <div class="capitalize w-full md:w-1/2">
+            <h4 class="mb-6 text-4xl font-bold lg:text-6xl">
+              curated artworks
+            </h4>
+            <p class="mb-6 text-darkGray">
+              tempor,art work Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nemo fuga tempora aliquam consequatur! Consequuntur eius
+              enim, doloribus ullam rem quasi cumque tempora placeat alias
+              accusantium animi! Consequatur tenetur delectus cumque!
+            </p>
+            <div>
+              <ul>
+                <li class="flex items-center">
+                  <i
+                    class="fa-solid fa-check text-primaryColor text-2xl mr-2"
+                  ></i>
+                  <div>consequat turpis sed meyus tortor sit</div>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fa-solid fa-check text-primaryColor text-2xl mr-2"
+                  ></i>
+                  <div>sollicitidin tempus amet consectetur.</div>
+                </li>
+                <li class="flex items-center">
+                  <i
+                    class="fa-solid fa-check text-primaryColor text-2xl mr-2"
+                  ></i>
+                  <div>dolor sit amet consectetur tellus vulputate.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- users says -->
+    <section class="user my-12">
+      <div class="container mx-auto p-6">
+        <div class="user-content">
+          <div class="header-user capitalize text-center mb-12">
+            <h5 class="mb-6 text-3xl font-bold md:text-4xl">
+              what our users says
+            </h5>
+            <p class="font-light">
+              adipisicing elit. Repellendus voluptates iusto mollitia a
+              doloremque, reprehenderit excepturi itaque quod fugit. Illo esse a
+              sit amet, consectetur adipisicing elit. exercitationem est nostrum
+              sunt laborum iste voluptas quod.
+            </p>
+          </div>
+          <!-- user flex -->
+          <div
+            class="user-messages capitalize md:flex md:items-center md:justify-between md:gap-6"
+          >
+            <!-- left user -->
+            <div>
+              <img class="rounded-lg" src="images/app7.jpg" alt="app chat" />
+            </div>
+            <!-- rigth user -->
+            <div class="mt-6">
+              <!-- user 1 -->
+              <div>
+                <h6 class="font-bold text-xl my-2">
+                  clark jackson,photographer
+                </h6>
+                <p class="mb-2">
+                  " Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quam vitae libero debitis vero in possimus voluptatibus
+                  dolorum, sit labore."
+                </p>
+              </div>
+              <hr />
+              <!-- user 2 -->
+              <div>
+                <h6 class="font-bold text-xl my-2">
+                  mark henry,creative director
+                </h6>
+                <p class="mb-2">
+                  " Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quam vitae libero debitis vero in possimus voluptatibus
+                  dolorum, sit labore."
+                </p>
+              </div>
+              <hr />
+              <!-- user 3 -->
+              <div>
+                <h6 class="font-bold text-xl my-2">
+                  eric fisher,interior designer
+                </h6>
+                <p class="mb-2">
+                  " Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quam vitae libero debitis vero in possimus voluptatibus
+                  dolorum, sit labore."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- get started -->
+    <section class="get-started">
+      <div class="container mx-auto p-6">
+        <div
+          class="get-content flex flex-col items-center text-center text-whiteColor capitalize bg-gradient-to-r from-sky-200 to-sky-700 rounded-lg p-12"
+        >
+          <h6 class="mb-6 text-4xl font-bold">get started today</h6>
+          <p class="mb-6 lg:w-3/5">
+            get started today amet consectetur adipisicing elit. Eum sapiente ut
+            repellendus eligendi, doloribus quibusdam suscipit delectus aut
+            dicta sed commodi pariatur nobis explicabo libero iste facere cumque
+            quam excepturi.
+          </p>
+          <a
+            class="bg-whiteColor text-darkGray py-2 px-4 rounded-full hover:bg-darkGray hover:text-whiteColor hover:ease-in hover:duration-500"
+            href="#"
+            >Download for Free</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="capitalize p-6 text-whiteColor bg-darkGray">
+      <div class="container mx-auto p-6">
+        <!-- footer container -->
+        <div class="mb-4 md:grid md:grid-cols-2">
+          <!-- box 1 -->
+          <div>
+            <a class="font-bold text-2xl" href="#"
+              ><h1>SHXD<span class="text-primaryColor text-4xl">.</span></h1></a
+            >
+            <p class="mt-2">
+              an inclusive community for professional creatives
+            </p>
+          </div>
+          <!-- box 2 -->
+          <div class="flex items-center justify-between mt-4 md:mt-0">
+            <!-- box2 V1 -->
+            <div>
+              <h6 class="font-bold text-lg mb-2">company</h6>
+              <ul>
+                <li>
+                  <a
+                    class="hover:text-primaryColor Hover:ease-in hover:duration-300"
+                    href="#"
+                    >about</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primaryColor Hover:ease-in hover:duration-300"
+                    href="#"
+                    >team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primaryColor Hover:ease-in hover:duration-300"
+                    href="#"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- box2 V2 -->
+            <div>
+              <h6 class="font-bold text-lg mb-2">product</h6>
+              <ul>
+                <li>
+                  <a
+                    class="hover:text-primaryColor Hover:ease-in hover:duration-300"
+                    href="#"
+                    href="#"
+                    >services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:text-primaryColor Hover:ease-in hover:duration-300"
+                    href="#"
+                    href="#"
+                    >pricing</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- copy -->
+        <div class="mt-4 flex items-center justify-between">
+          <!-- box 1 -->
+          <div>
+            <p>@2023-<span class="text-primaryColor">SHADOW007</span></p>
+          </div>
+          <!-- box 2 -->
+          <div>
+            <p>terms and conditions | privacy policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- custome js  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
